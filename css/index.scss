@@ -43,9 +43,65 @@
   }
 
   &--img {
-    @include backgroundImg("../Images/hero.png", 28rem, 28rem);
+    @include backgroundImg("../Images/hero.png", 25rem, 21rem);
   }
 }
 
+// Home Page - Recommendations Section:
 
+// The recommendations title must have the color of #335576
+// There will be 3 Cards, one for each destination (Iceland, Greece, Hawaii)
+// The destination name must be in the bottom right corner of the card
+// The border radius of the cards must be 5px
+// The border of the cards must be 1px solid black with an opacity of 20%
+// The box shadow of the cards must be:
+// Horizontal Offset: 0px
+// Vertical Offset: 4px
+// Blur: 4px
+// Color: Black, with an opacity of 20%
 
+.recommendations-section {
+  @include flexCenter;
+  height: 32rem;
+  padding-top: 2.5rem;
+  color: $slate;
+  position: relative;
+  gap: 3rem;
+
+  a {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: $white;
+    text-decoration: none;
+  }
+
+  &--recommendations {
+    position: absolute;
+    top: 3rem;
+    left: 5rem;
+    font-size: 1.4rem;
+    font-weight: 800;
+  }
+
+  &__card {
+    @include flexCenter;
+    align-items: flex-end;
+    justify-content: flex-end;
+    border-radius: 5px;
+    padding: 0 1.5rem 1.1rem;
+    // height: 21rem;
+    // width: 12rem;
+  }
+}
+
+.card--hawaii {
+  @include backgroundImg("../Images/hawaii.jpg", 12rem, 21rem);                 
+}
+
+.card--iceland {
+  @include backgroundImg("../Images/iceland.jpg", 12rem, 21rem);
+}
+
+.card--greece {
+  @include backgroundImg("../Images/greece.jpg", 12rem, 21rem);
+}

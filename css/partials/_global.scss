@@ -20,7 +20,7 @@ p {
 @mixin backgroundImg($urlSrc, $bkgImgWidth, $bkgImgHeight) {
   background-image: url($urlSrc);
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   width: $bkgImgWidth;
   height: $bkgImgHeight;
@@ -77,4 +77,14 @@ p {
   &-link--active {
     border-bottom: 0.22rem solid $orange;
   }
+}
+
+
+.footer {
+  width: 100%;
+  height: 12rem;
+  background: $off-white;
+  @include flexCenter();
+  justify-content: space-around;
+  
 }

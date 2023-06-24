@@ -65,6 +65,17 @@ p {
   border-bottom: 0.22rem solid #db7a4e;
 }
 
+.footer {
+  width: 100%;
+  height: 12rem;
+  background: #fefaf5;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+
 .hero {
   background-color: #fefaf5;
   display: flex;
