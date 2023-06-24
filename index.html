@@ -4,10 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/index.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
 
     <title>Travel Site - Michael Sun Dela Cruz</title>
   </head>
@@ -15,13 +14,24 @@
   <body>
     <nav class="nav">
       <div class="nav__main">
-        <h2 class="nav--travel-site">Travel Site</h2>
+        <h2 class="nav--travel-site"><a href="./index.html">Travel Site</a></h2>
       </div>
       <div class="nav__page-links">
-        <a href="./index.html" class="nav--link">Home</a
-        ><a href="./pages/hawaii.html" class="nav--link">Hawaii</a
-        ><a href="./pages/iceland.html" class="nav--link">Iceland</a
-        ><a href="./pages/greece.html" class="nav--link">Greece</a>
+        <a href="./index.html" class="nav--link">
+          <div class="nav-link--box nav-link--active">Home</div></a
+        >
+
+        <a href="./pages/hawaii.html" class="nav--link"
+          ><div class="nav-link--box">Hawaii</div></a
+        >
+
+        <a href="./pages/iceland.html" class="nav--link">
+          <div class="nav-link--box">Iceland</div></a
+        >
+
+        <a href="./pages/greece.html" class="nav--link"
+          ><div class="nav-link--box">Greece</div></a
+        >
       </div>
     </nav>
 
@@ -40,7 +50,7 @@
             </div>
           </div>
           <div class="hero__description__button">
-            <div class="hero__description--button">Get started</div>
+            <a href="" class="hero__button--link"><div class="hero__description--button">Get started</div></a>
           </div>
         </div>
         <div class="hero__image">

@@ -1,3 +1,51 @@
-@import './partials/colors';
-@import './partials/global';
+@use "./partials/colors" as *;
+@import "./partials/global";
+
+.hero {
+  background-color: $off-white;
+  @include flexCenter();
+  height: 30rem;
+  gap: 7rem;
+  color: $slate;
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    width: 35rem;
+    height: 100%;
+
+    &--header {
+      font-size: 2.5rem;
+      font-weight: 800;
+    }
+
+    &--text {
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    &--button {
+      @include flexCenter;
+      background-color: $orange;
+      height: 2.4rem;
+      width: 10rem;
+      border-radius: 20rem;
+    }
+  }
+
+  &__button--link {
+    font-size: 1rem;
+    color: $white;
+    text-decoration: none;
+  }
+
+  &--img {
+    @include backgroundImg("../Images/hero.png", 28rem, 28rem);
+  }
+}
+
+
 

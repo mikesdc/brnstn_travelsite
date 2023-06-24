@@ -71,47 +71,4 @@ p {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 30rem;
-  gap: 7rem;
-  color: #335576;
-}
-.hero__description {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 2rem;
-  width: 35rem;
-  height: 100%;
-}
-.hero__description--header {
-  font-size: 2.5rem;
-  font-weight: 800;
-}
-.hero__description--text {
-  font-size: 1rem;
-  font-weight: 500;
-}
-.hero__description--button {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  background-color: #db7a4e;
-  height: 2.4rem;
-  width: 10rem;
-  border-radius: 20rem;
-}
-.hero__button--link {
-  font-size: 1rem;
-  color: #ffffff;
-  text-decoration: none;
-}
-.hero--img {
-  background-image: url("../Images/hero.png");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 28rem;
-  height: 28rem;
-}/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=pages.css.map */

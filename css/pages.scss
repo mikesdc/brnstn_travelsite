@@ -1,0 +1,8 @@
+@use './partials/colors' as *;
+@import './partials/global';
+
+.hero {
+    background-color: $off-white;
+    @include flexCenter();
+
+}
