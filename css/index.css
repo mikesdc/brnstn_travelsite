@@ -150,6 +150,7 @@ p {
   left: 5rem;
   font-size: 1.4rem;
   font-weight: 800;
+  color: #335576;
 }
 .recommendations-section__card {
   display: flex;
@@ -189,4 +190,74 @@ p {
   background-repeat: no-repeat;
   width: 12rem;
   height: 21rem;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  gap: 10rem;
+}
+.footer__section {
+  height: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 2rem;
+}
+.footer--header {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #335576;
+}
+.footer--sub {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #db7a4e;
+}
+.footer--info {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #335576;
+}
+.footer__business-hours {
+  display: flex;
+  gap: 3rem;
+}
+.footer--social-icons {
+  display: flex;
+  gap: 2rem;
+  padding-top: 2rem;
+}
+
+.instagram-icon {
+  background-image: url("../icons/icon-instagram.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 2rem;
+  height: 2rem;
+  background-size: contain;
+}
+
+.facebook-icon {
+  background-image: url("../icons/icon-facebook.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 2rem;
+  height: 2rem;
+  background-size: contain;
+}
+
+.twitter-icon {
+  background-image: url("../icons/icon-twitter.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 2rem;
+  height: 2rem;
+  background-size: contain;
 }/*# sourceMappingURL=index.css.map */

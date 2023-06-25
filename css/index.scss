@@ -79,6 +79,7 @@
     left: 5rem;
     font-size: 1.4rem;
     font-weight: 800;
+    color: $slate;
   }
 
   &__card {
@@ -94,6 +95,7 @@
 
 .card--hawaii {
   @include backgroundImg("../Images/hawaii.jpg", 12rem, 21rem);
+
 }
 
 .card--iceland {
@@ -102,4 +104,63 @@
 
 .card--greece {
   @include backgroundImg("../Images/greece.jpg", 12rem, 21rem);
+}
+
+.footer {
+  @include flexCenter;
+  align-items: flex-start;
+  gap: 10rem;
+
+  &__section {
+    height: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 2rem;
+  }
+
+  &--header {
+    font-size: 2rem;
+    font-weight: 800;
+    color: $slate;
+  }
+
+  &--sub {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: $orange;
+  }
+
+  &--info {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: $slate;
+  }
+
+&__business-hours {
+  display: flex;
+  gap: 3rem;
+
+}
+
+  &--social-icons {
+    display: flex;
+    gap: 2rem;
+    padding-top: 2rem;
+  }
+}
+
+.instagram-icon {
+  @include backgroundImg("../icons/icon-instagram.png", 2rem, 2rem);
+  background-size: contain;
+}
+
+.facebook-icon {
+  @include backgroundImg("../icons/icon-facebook.png", 2rem, 2rem);
+  background-size: contain;
+}
+
+.twitter-icon {
+  @include backgroundImg("../icons/icon-twitter.png", 2rem, 2rem);
+  background-size: contain;
 }
