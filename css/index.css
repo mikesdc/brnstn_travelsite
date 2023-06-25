@@ -1,7 +1,7 @@
 html,
 body,
 h2,
-p {
+p, ul, li {
   margin: 0;
   padding: 0;
 }
@@ -20,6 +20,16 @@ p {
   align-content: center;
   align-items: baseline;
   position: fixed;
+}
+.nav ul {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  gap: 1.5rem;
+}
+.nav ul li {
+  display: inline;
+  position: relative;
 }
 .nav__main {
   border-bottom: 0.2rem solid transparent;

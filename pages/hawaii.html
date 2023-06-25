@@ -3,10 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/index.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/pages.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Travel Site - Michael Sun Dela Cruz</title>
   </head>
@@ -14,23 +17,99 @@
   <body>
     <nav class="nav">
       <div class="nav__main">
-        <h2 class="nav--travel-site"><a href="../index.html">Travel Site</h2></a>
+        <h2 class="nav--travel-site">
+          <a href="../index.html">Travel Site</a>
+        </h2>
       </div>
       <div class="nav__page-links">
-        <a href="../index.html" class="nav--link">
-          <div class="nav-link--box">Home</div></a
-        >
+        <ul class="nav__page-links-ul">
+          <li>
+            <a href="../index.html" class="nav--link">
+              <div class="nav-link--box">Home</div></a
+            >
+          </li>
 
-        <a href="./hawaii.html" class="nav--link"
-          ><div class="nav-link--box nav-link--active">Hawaii</div></a
-        >
+          <li>
+            <a href="./hawaii.html" class="nav--link"
+              ><div class="nav-link--box nav-link--active">Hawaii</div></a
+            >
+          </li>
 
-        <a href="./iceland.html" class="nav--link">
-          <div class="nav-link--box">Iceland</div></a
-        >
+          <li>
+            <a href="./iceland.html" class="nav--link">
+              <div class="nav-link--box">Iceland</div></a
+            >
+          </li>
 
-        <a href="./greece.html" class="nav--link"
-          ><div class="nav-link--box">Greece</div></a
-        >
+          <li>
+            <a href="./greece.html" class="nav--link"
+              ><div class="nav-link--box">Greece</div></a
+            >
+          </li>
+        </ul>
       </div>
     </nav>
+
+    <main>
+      <section class="itinerary-section hover">
+        <h2 class="itinerary-section--destination">Hawaii</h2>
+
+        <div class="itinerary-section__card card--hawaii hover">Hawaii</div>
+
+        <div class="itinerary-section__card card--iceland">Iceland</div>
+
+        <div class="itinerary-section__card card--greece">Greece</div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__section">
+        <div class="footer--header">Contact</div>
+        <div class="footer__email-container">
+          <div class="footer--sub">EMAIL</div>
+          <div class="footer--info">
+            <a class="email-link" href="mailto:fake@email.address"
+              >info@travelsite.com</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="footer__section">
+        <div class="footer--header">Hours</div>
+        <div class="footer__business-hours">
+          <div class="footer__business-hours--m-f">
+            <div class="footer--sub">MONDAY - FRIDAY</div>
+            <div class="footer--info">9:00 AM - 5:00 PM</div>
+          </div>
+          <div class="footer__business-hours--sat">
+            <div class="footer--sub">SATURDAY</div>
+            <div class="footer--info">10:00 AM - 4:00 PM</div>
+          </div>
+          <div class="footer__business-hours--sun">
+            <div class="footer--sub">SUNDAY</div>
+            <div class="footer--info">Closed</div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__section">
+        <div class="footer--header">Social</div>
+        <div class="footer--social-icons">
+          <div>
+            <a href="https://www.instagram.com" target="_blank"
+              ><div class="footer--icon instagram-icon"></div
+            ></a>
+          </div>
+          <div>
+            <a href="https://www.facebook.com" target="_blank"
+              ><div class="footer--icon facebook-icon"></div
+            ></a>
+          </div>
+          <div>
+            <a href="https://www.twitter.com" target="_blank"
+              ><div class="footer--icon twitter-icon"></div
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

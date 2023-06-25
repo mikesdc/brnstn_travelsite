@@ -48,17 +48,6 @@
   }
 }
 
-// Home Page - Recommendations Section:
-
-// The recommendations title must have the color of #335576
-// The border radius of the cards must be 5px
-// The border of the cards must be 1px solid black with an opacity of 20%
-// The box shadow of the cards must be:
-// Horizontal Offset: 0px
-// Vertical Offset: 4px
-// Blur: 4px
-// Color: Black, with an opacity of 20%
-
 .recommendations-section {
   @include flexCenter;
   height: 32rem;

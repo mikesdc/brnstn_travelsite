@@ -1,8 +1,43 @@
-@use './partials/colors' as *;
-@import './partials/global';
+@use "./partials/colors" as *;
+@import "./partials/global";
 
-.hero {
-    background-color: $off-white;
-    @include flexCenter();
+.itinerary-section {
+  @include flexCenter;
+  height: 32rem;
+  padding-top: 3.9rem;
+  color: $slate;
+  position: relative;
+  gap: 3rem;
+  @include backgroundImg("../Images/hawaii.jpg", 100%, 40rem);
+  z-index: -1;
 
+  a {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: $white;
+    text-decoration: none;
+  }
+
+  &--destination {
+    position: absolute;
+    top: 7rem;
+    left: 7rem;
+    font-size: 4.2rem;
+    font-weight: 800;
+    color: $white;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin-top: 5rem;
+    width: 12rem;
+    height: 21rem;
+    padding: 0 1.5rem 1.1rem;
+    background-color: $white;
+  }
 }

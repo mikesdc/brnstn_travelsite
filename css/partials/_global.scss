@@ -1,7 +1,7 @@
 html,
 body,
 h2,
-p {
+p, ul, li {
   margin: 0;
   padding: 0;
 }
@@ -36,7 +36,18 @@ p {
   align-content: center;
   align-items: baseline;
   position: fixed;
-  // gap: 45rem;
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    gap: 1.5rem;
+
+    li {
+      display: inline;
+      position: relative;
+    }
+  }
 
   &__main {
     border-bottom: 0.2rem solid transparent;
@@ -54,16 +65,16 @@ p {
     font-weight: 800;
     font-size: 1.1rem;
     margin: 0 4rem;
-    // padding-top: 1rem;
   }
 
   &__page-links {
     @include flexCenter();
+
     gap: 1rem;
     margin: 0 4rem;
 
     a {
-      font-size: .9rem;
+      font-size: 0.9rem;
       text-decoration: none;
       color: black;
     }
@@ -121,7 +132,7 @@ p {
   }
 
   &--info {
-    font-size: .9rem;
+    font-size: 0.9rem;
     font-weight: 500;
     color: $slate;
     padding-top: 0.5rem;
