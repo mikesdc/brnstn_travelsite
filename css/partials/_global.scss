@@ -30,7 +30,8 @@ p {
   width: 100%;
   height: 3.7rem;
   background: $white;
-  @include flexCenter();
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
 
@@ -70,7 +71,9 @@ p {
     border-bottom: 0.22rem solid transparent;
     &:hover {
       border-bottom: 0.22rem solid $orange;
-      @include flexCenter();
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
       align-items: baseline;
     }
   }
@@ -79,12 +82,70 @@ p {
   }
 }
 
-
 .footer {
   width: 100%;
-  height: 12rem;
+  height: 14rem;
   background: $off-white;
-  @include flexCenter();
-  justify-content: space-around;
-  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 7rem;
+
+  a {
+    color: $slate;
+    text-decoration: none;
+  }
+
+  &__section {
+    height: 6.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 3rem;
+  }
+
+  &--header {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: $slate;
+  }
+
+  &--sub {
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: $orange;
+  }
+
+  &--info {
+    font-size: 1rem;
+    font-weight: 500;
+    color: $slate;
+    padding-top: 0.5rem;
+  }
+
+  &__business-hours {
+    display: flex;
+    gap: 2rem;
+  }
+
+  &--social-icons {
+    display: flex;
+    gap: 2rem;
+  }
+}
+
+.instagram-icon {
+  @include backgroundImg("../icons/icon-instagram.png", 1.7rem, 1.7rem);
+  background-size: contain;
+}
+
+.facebook-icon {
+  @include backgroundImg("../icons/icon-facebook.png", 1.7rem, 1.7rem);
+  background-size: contain;
+}
+
+.twitter-icon {
+  @include backgroundImg("../icons/icon-twitter.png", 1.7rem, 1.7rem);
+  background-size: contain;
 }
