@@ -7,20 +7,23 @@ p {
 }
 
 * {
-  font-family: "Open Sans";
+  font-family: Verdana, Geneva, sans-serif;
 }
 
 .nav {
   width: 100%;
-  height: 3.7rem;
+  height: 3.9rem;
   background: #ffffff;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-content: center;
   align-items: baseline;
+  position: fixed;
 }
 .nav__main {
-  border-bottom: 0.22rem solid transparent;
+  border-bottom: 0.2rem solid transparent;
+  margin: 1.2rem;
 }
 .nav__main a,
 .nav__main a:visited {
@@ -30,9 +33,8 @@ p {
 .nav--travel-site {
   color: #335576;
   font-weight: 800;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   margin: 0 4rem;
-  padding-top: 1rem;
 }
 .nav__page-links {
   display: flex;
@@ -43,23 +45,23 @@ p {
   margin: 0 4rem;
 }
 .nav__page-links a {
-  font-size: 1rem;
+  font-size: 0.9rem;
   text-decoration: none;
   color: black;
 }
 .nav-link--box {
   padding: 1rem 0 0.6rem;
-  border-bottom: 0.22rem solid transparent;
+  border-bottom: 0.2rem solid transparent;
 }
 .nav-link--box:hover {
-  border-bottom: 0.22rem solid #db7a4e;
+  border-bottom: 0.2rem solid #db7a4e;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: baseline;
 }
 .nav-link--active {
-  border-bottom: 0.22rem solid #db7a4e;
+  border-bottom: 0.2rem solid #db7a4e;
 }
 
 .footer {
@@ -77,24 +79,24 @@ p {
   text-decoration: none;
 }
 .footer__section {
-  height: 6.5rem;
+  height: 6rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding-top: 3rem;
 }
 .footer--header {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 800;
   color: #335576;
 }
 .footer--sub {
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   font-weight: 400;
   color: #db7a4e;
 }
 .footer--info {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 500;
   color: #335576;
   padding-top: 0.5rem;
@@ -105,7 +107,7 @@ p {
 }
 .footer--social-icons {
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .instagram-icon {
@@ -144,9 +146,10 @@ p {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 30rem;
+  height: 31rem;
   gap: 7rem;
   color: #335576;
+  padding-top: 3.9rem;
 }
 .hero__description {
   display: flex;
@@ -158,11 +161,11 @@ p {
   height: 100%;
 }
 .hero__description--header {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: 800;
 }
 .hero__description--text {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 500;
 }
 .hero__description--button {
@@ -176,7 +179,7 @@ p {
   border-radius: 20rem;
 }
 .hero__button--link {
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #ffffff;
   text-decoration: none;
 }
