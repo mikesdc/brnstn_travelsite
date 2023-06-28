@@ -20,6 +20,12 @@ p, ul, li {
   align-content: center;
   align-items: baseline;
   position: fixed;
+  z-index: 5;
+}
+@media only screen and (max-width: 450px) {
+  .nav {
+    justify-content: center;
+  }
 }
 .nav ul {
   display: flex;
@@ -35,6 +41,12 @@ p, ul, li {
   border-bottom: 0.2rem solid transparent;
   margin: 1.2rem;
 }
+@media only screen and (max-width: 450px) {
+  .nav__main {
+    display: none;
+    flex-basis: 0;
+  }
+}
 .nav__main a,
 .nav__main a:visited {
   color: #335576;
@@ -45,6 +57,12 @@ p, ul, li {
   font-weight: 800;
   font-size: 1.1rem;
   margin: 0 4rem;
+}
+@media only screen and (max-width: 450px) {
+  .nav--travel-site {
+    display: none;
+    flex-basis: 0;
+  }
 }
 .nav__page-links {
   display: flex;
@@ -84,6 +102,11 @@ p, ul, li {
   align-items: flex-start;
   gap: 7rem;
 }
+@media only screen and (max-width: 1000px) {
+  .footer {
+    gap: 2rem;
+  }
+}
 .footer a {
   color: #335576;
   text-decoration: none;
@@ -115,6 +138,11 @@ p, ul, li {
   display: flex;
   gap: 2rem;
 }
+@media only screen and (max-width: 1000px) {
+  .footer__business-hours {
+    gap: 0.8rem;
+  }
+}
 .footer--social-icons {
   display: flex;
   gap: 1.5rem;
@@ -123,31 +151,28 @@ p, ul, li {
 .instagram-icon {
   background-image: url("../icons/icon-instagram.png");
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   width: 1.7rem;
   height: 1.7rem;
-  background-size: contain;
 }
 
 .facebook-icon {
   background-image: url("../icons/icon-facebook.png");
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   width: 1.7rem;
   height: 1.7rem;
-  background-size: contain;
 }
 
 .twitter-icon {
   background-image: url("../icons/icon-twitter.png");
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   width: 1.7rem;
   height: 1.7rem;
-  background-size: contain;
 }
 
 .hawaii-background {

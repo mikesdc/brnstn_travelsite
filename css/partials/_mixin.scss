@@ -1,0 +1,35 @@
+@use "./variables" as *;
+
+@mixin flexCenter() {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin backgroundImg($urlSrc, $bgsize, $bkgImgWidth, $bkgImgHeight) {
+  background-image: url($urlSrc);
+  background-position: center;
+  background-size: $bgsize;
+  background-repeat: no-repeat;
+  width: $bkgImgWidth;
+  height: $bkgImgHeight;
+}
+
+@mixin mobile {
+  @media only screen and (max-width: $mobile-breakpoint) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media only screen and (max-width: $tablet-breakpoint) {
+    @content;
+  }
+}
+
+@mixin media-size($screenSize) {
+  @media only screen and (max-width: $screenSize) {
+    @content;
+  }
+}

@@ -1,5 +1,6 @@
-@use "./partials/colors" as *;
-@import "./partials/global";
+@use "./partials/variables" as *;
+@use "./partials/global" as *;
+@use "./partials/mixin" as *;
 
 .hero {
   background-color: $off-white;
@@ -8,6 +9,11 @@
   gap: 7rem;
   color: $slate;
   padding-top: 3.9rem;
+
+  @include tablet {
+    display: relative;
+    gap: 2rem;
+  }
 
   &__description {
     display: flex;
@@ -18,13 +24,17 @@
     width: 35rem;
     height: 100%;
 
+    @include tablet {
+      width: 25rem;
+    }
+
     &--header {
       font-size: 2.2rem;
       font-weight: 800;
     }
 
     &--text {
-      font-size: .9rem;
+      font-size: 0.9rem;
       font-weight: 500;
     }
 
@@ -38,13 +48,17 @@
   }
 
   &__button--link {
-    font-size: .9rem;
+    font-size: 0.9rem;
     color: $white;
     text-decoration: none;
   }
 
   &--img {
-    @include backgroundImg("../Images/hero.png", 25rem, 21rem);
+    @include backgroundImg("../Images/hero.png", contain, 25rem, 21rem);
+
+    @include tablet {
+      @include backgroundImg("../Images/hero.png", contain, 18rem, 20rem);
+    }
   }
 }
 
@@ -55,6 +69,18 @@
   color: $slate;
   position: relative;
   gap: 3rem;
+
+  @include media-size(800px) {
+    height: 55rem;
+  }
+  
+  @include tablet {
+  gap: 1.5rem;
+  }
+
+  @include media-size(800px) {
+    flex-direction: column;
+  }
 
   a {
     font-size: 1.5rem;
@@ -81,18 +107,30 @@
     box-shadow: 0px 4px 4px rgba($color: #000000, $alpha: 0.2);
     border-radius: 5px;
     padding: 0 1.5rem 1.1rem;
+
   }
 }
 
 .card--hawaii {
-  @include backgroundImg("../Images/hawaii.jpg", 12rem, 21rem);
-
+  @include backgroundImg("../Images/hawaii.jpg", cover, 12rem, 21rem);
+  
+  @include media-size(800px) {
+    @include backgroundImg("../Images/hawaii.jpg", cover, 21rem, 12rem);
+  }
 }
 
 .card--iceland {
-  @include backgroundImg("../Images/iceland.jpg", 12rem, 21rem);
+  @include backgroundImg("../Images/iceland.jpg", cover, 12rem, 21rem);
+
+  @include media-size(800px) {
+    @include backgroundImg("../Images/iceland.jpg", cover, 21rem, 12rem);
+  }
 }
 
 .card--greece {
-  @include backgroundImg("../Images/greece.jpg", 12rem, 21rem);
+  @include backgroundImg("../Images/greece.jpg", cover, 12rem, 21rem);
+
+  @include media-size(800px) {
+    @include backgroundImg("../Images/greece.jpg", cover, 21rem, 12rem);
+  }
 }

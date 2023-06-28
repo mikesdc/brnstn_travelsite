@@ -1,3 +1,6 @@
+@use "./variables" as *;
+@use "./mixin" as *;
+
 html,
 body,
 h2,
@@ -10,22 +13,6 @@ p, ul, li {
   font-family: Verdana, Geneva, sans-serif;
 }
 
-@mixin flexCenter() {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-@mixin backgroundImg($urlSrc, $bkgImgWidth, $bkgImgHeight) {
-  background-image: url($urlSrc);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: $bkgImgWidth;
-  height: $bkgImgHeight;
-}
-
 .nav {
   width: 100%;
   height: 3.9rem;
@@ -36,6 +23,13 @@ p, ul, li {
   align-content: center;
   align-items: baseline;
   position: fixed;
+  z-index: 5;
+  
+  @include mobile {
+  justify-content: center;
+  
+  }
+
 
   ul {
     display: flex;
@@ -52,6 +46,11 @@ p, ul, li {
   &__main {
     border-bottom: 0.2rem solid transparent;
     margin: 1.2rem;
+    
+    @include mobile {
+      display: none;
+      flex-basis: 0;
+    }
 
     a,
     a:visited {
@@ -65,13 +64,21 @@ p, ul, li {
     font-weight: 800;
     font-size: 1.1rem;
     margin: 0 4rem;
+
+    @include mobile {
+      display: none;
+      flex-basis: 0;
+    }
   }
 
   &__page-links {
     @include flexCenter();
-
     gap: 1rem;
     margin: 0 4rem;
+
+    @include mobile {
+     
+    }
 
     a {
       font-size: 0.9rem;
@@ -105,6 +112,10 @@ p, ul, li {
   justify-content: center;
   align-items: flex-start;
   gap: 7rem;
+
+  @include tablet {
+   gap: 2rem;
+  }
 
   a {
     color: $slate;
@@ -141,6 +152,10 @@ p, ul, li {
   &__business-hours {
     display: flex;
     gap: 2rem;
+    
+    @include tablet {
+      gap: 0.8rem;
+     }
   }
 
   &--social-icons {
@@ -150,16 +165,13 @@ p, ul, li {
 }
 
 .instagram-icon {
-  @include backgroundImg("../icons/icon-instagram.png", 1.7rem, 1.7rem);
-  background-size: contain;
+  @include backgroundImg("../icons/icon-instagram.png", contain, 1.7rem, 1.7rem);
 }
 
 .facebook-icon {
-  @include backgroundImg("../icons/icon-facebook.png", 1.7rem, 1.7rem);
-  background-size: contain;
+  @include backgroundImg("../icons/icon-facebook.png", contain, 1.7rem, 1.7rem);
 }
 
 .twitter-icon {
-  @include backgroundImg("../icons/icon-twitter.png", 1.7rem, 1.7rem);
-  background-size: contain;
+  @include backgroundImg("../icons/icon-twitter.png", contain, 1.7rem, 1.7rem);
 }

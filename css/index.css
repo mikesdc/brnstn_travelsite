@@ -20,6 +20,12 @@ p, ul, li {
   align-content: center;
   align-items: baseline;
   position: fixed;
+  z-index: 5;
+}
+@media only screen and (max-width: 450px) {
+  .nav {
+    justify-content: center;
+  }
 }
 .nav ul {
   display: flex;
@@ -35,6 +41,12 @@ p, ul, li {
   border-bottom: 0.2rem solid transparent;
   margin: 1.2rem;
 }
+@media only screen and (max-width: 450px) {
+  .nav__main {
+    display: none;
+    flex-basis: 0;
+  }
+}
 .nav__main a,
 .nav__main a:visited {
   color: #335576;
@@ -45,6 +57,12 @@ p, ul, li {
   font-weight: 800;
   font-size: 1.1rem;
   margin: 0 4rem;
+}
+@media only screen and (max-width: 450px) {
+  .nav--travel-site {
+    display: none;
+    flex-basis: 0;
+  }
 }
 .nav__page-links {
   display: flex;
@@ -84,6 +102,11 @@ p, ul, li {
   align-items: flex-start;
   gap: 7rem;
 }
+@media only screen and (max-width: 1000px) {
+  .footer {
+    gap: 2rem;
+  }
+}
 .footer a {
   color: #335576;
   text-decoration: none;
@@ -115,6 +138,11 @@ p, ul, li {
   display: flex;
   gap: 2rem;
 }
+@media only screen and (max-width: 1000px) {
+  .footer__business-hours {
+    gap: 0.8rem;
+  }
+}
 .footer--social-icons {
   display: flex;
   gap: 1.5rem;
@@ -123,31 +151,28 @@ p, ul, li {
 .instagram-icon {
   background-image: url("../icons/icon-instagram.png");
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   width: 1.7rem;
   height: 1.7rem;
-  background-size: contain;
 }
 
 .facebook-icon {
   background-image: url("../icons/icon-facebook.png");
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   width: 1.7rem;
   height: 1.7rem;
-  background-size: contain;
 }
 
 .twitter-icon {
   background-image: url("../icons/icon-twitter.png");
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   width: 1.7rem;
   height: 1.7rem;
-  background-size: contain;
 }
 
 .hero {
@@ -161,6 +186,12 @@ p, ul, li {
   color: #335576;
   padding-top: 3.9rem;
 }
+@media only screen and (max-width: 1000px) {
+  .hero {
+    display: relative;
+    gap: 2rem;
+  }
+}
 .hero__description {
   display: flex;
   flex-direction: column;
@@ -169,6 +200,11 @@ p, ul, li {
   gap: 2rem;
   width: 35rem;
   height: 100%;
+}
+@media only screen and (max-width: 1000px) {
+  .hero__description {
+    width: 25rem;
+  }
 }
 .hero__description--header {
   font-size: 2.2rem;
@@ -196,10 +232,20 @@ p, ul, li {
 .hero--img {
   background-image: url("../Images/hero.png");
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   width: 25rem;
   height: 21rem;
+}
+@media only screen and (max-width: 1000px) {
+  .hero--img {
+    background-image: url("../Images/hero.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 18rem;
+    height: 20rem;
+  }
 }
 
 .recommendations-section {
@@ -212,6 +258,21 @@ p, ul, li {
   color: #335576;
   position: relative;
   gap: 3rem;
+}
+@media only screen and (max-width: 800px) {
+  .recommendations-section {
+    height: 55rem;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .recommendations-section {
+    gap: 1.5rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .recommendations-section {
+    flex-direction: column;
+  }
 }
 .recommendations-section a {
   font-size: 1.5rem;
@@ -246,6 +307,16 @@ p, ul, li {
   width: 12rem;
   height: 21rem;
 }
+@media only screen and (max-width: 800px) {
+  .card--hawaii {
+    background-image: url("../Images/hawaii.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 21rem;
+    height: 12rem;
+  }
+}
 
 .card--iceland {
   background-image: url("../Images/iceland.jpg");
@@ -255,6 +326,16 @@ p, ul, li {
   width: 12rem;
   height: 21rem;
 }
+@media only screen and (max-width: 800px) {
+  .card--iceland {
+    background-image: url("../Images/iceland.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 21rem;
+    height: 12rem;
+  }
+}
 
 .card--greece {
   background-image: url("../Images/greece.jpg");
@@ -263,4 +344,14 @@ p, ul, li {
   background-repeat: no-repeat;
   width: 12rem;
   height: 21rem;
+}
+@media only screen and (max-width: 800px) {
+  .card--greece {
+    background-image: url("../Images/greece.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 21rem;
+    height: 12rem;
+  }
 }/*# sourceMappingURL=index.css.map */
