@@ -22,7 +22,12 @@ p, ul, li {
   position: fixed;
   z-index: 5;
 }
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 1000px) {
+  .nav {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 582px) {
   .nav {
     justify-content: center;
   }
@@ -41,7 +46,12 @@ p, ul, li {
   border-bottom: 0.2rem solid transparent;
   margin: 1.2rem;
 }
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 1000px) {
+  .nav__main {
+    margin: 1.2rem 0rem;
+  }
+}
+@media only screen and (max-width: 582px) {
   .nav__main {
     display: none;
     flex-basis: 0;
@@ -62,6 +72,11 @@ p, ul, li {
   .nav--travel-site {
     display: none;
     flex-basis: 0;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .nav--travel-site {
+    width: 7rem;
   }
 }
 .nav__page-links {
@@ -105,6 +120,13 @@ p, ul, li {
 @media only screen and (max-width: 1000px) {
   .footer {
     gap: 2rem;
+  }
+}
+@media only screen and (max-width: 710px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    height: 40rem;
   }
 }
 .footer a {
@@ -192,6 +214,16 @@ p, ul, li {
     gap: 2rem;
   }
 }
+@media only screen and (max-width: 710px) {
+  .hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 50rem;
+    flex-direction: row;
+    align-content: flex-start;
+  }
+}
 .hero__description {
   display: flex;
   flex-direction: column;
@@ -201,18 +233,40 @@ p, ul, li {
   width: 35rem;
   height: 100%;
 }
+@media only screen and (max-width: 710px) {
+  .hero__description {
+    height: 50%;
+  }
+}
 @media only screen and (max-width: 1000px) {
   .hero__description {
     width: 25rem;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .hero__description {
+    display: flex;
+    align-items: center;
+    text-align: center;
   }
 }
 .hero__description--header {
   font-size: 2.2rem;
   font-weight: 800;
 }
+@media only screen and (max-width: 450px) {
+  .hero__description--header {
+    padding: 0 2rem;
+  }
+}
 .hero__description--text {
   font-size: 0.9rem;
   font-weight: 500;
+}
+@media only screen and (max-width: 450px) {
+  .hero__description--text {
+    padding: 0 2rem;
+  }
 }
 .hero__description--button {
   display: flex;
@@ -354,4 +408,4 @@ p, ul, li {
     width: 21rem;
     height: 12rem;
   }
-}/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=main.css.map */

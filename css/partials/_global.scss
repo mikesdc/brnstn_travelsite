@@ -25,7 +25,11 @@ p, ul, li {
   position: fixed;
   z-index: 5;
   
-  @include mobile {
+  @include tablet {
+    justify-content: center;
+        }
+
+  @include media-size(582px) {
   justify-content: center;
   
   }
@@ -47,7 +51,11 @@ p, ul, li {
     border-bottom: 0.2rem solid transparent;
     margin: 1.2rem;
     
-    @include mobile {
+    @include tablet {
+      margin: 1.2rem 0rem;
+          }
+
+    @include media-size(582px) {
       display: none;
       flex-basis: 0;
     }
@@ -69,6 +77,11 @@ p, ul, li {
       display: none;
       flex-basis: 0;
     }
+
+    @include tablet {
+      width: 7rem;
+          }
+
   }
 
   &__page-links {
@@ -115,6 +128,12 @@ p, ul, li {
 
   @include tablet {
    gap: 2rem;
+  }
+
+  @include media-size(710px) {
+  flex-direction: column;  
+  align-items: center;
+  height: 40rem;
   }
 
   a {

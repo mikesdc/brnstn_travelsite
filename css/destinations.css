@@ -22,7 +22,12 @@ p, ul, li {
   position: fixed;
   z-index: 5;
 }
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 1000px) {
+  .nav {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 582px) {
   .nav {
     justify-content: center;
   }
@@ -41,7 +46,12 @@ p, ul, li {
   border-bottom: 0.2rem solid transparent;
   margin: 1.2rem;
 }
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 1000px) {
+  .nav__main {
+    margin: 1.2rem 0rem;
+  }
+}
+@media only screen and (max-width: 582px) {
   .nav__main {
     display: none;
     flex-basis: 0;
@@ -62,6 +72,11 @@ p, ul, li {
   .nav--travel-site {
     display: none;
     flex-basis: 0;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .nav--travel-site {
+    width: 7rem;
   }
 }
 .nav__page-links {
@@ -105,6 +120,13 @@ p, ul, li {
 @media only screen and (max-width: 1000px) {
   .footer {
     gap: 2rem;
+  }
+}
+@media only screen and (max-width: 710px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    height: 40rem;
   }
 }
 .footer a {
