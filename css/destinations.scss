@@ -21,7 +21,6 @@
   color: $slate;
   position: relative;
   gap: 3rem;
-  z-index: -1;
 
   @include media-size(880px) {
     flex-direction: column;
@@ -68,6 +67,12 @@
     height: 22rem;
     background-color: $white;
     position: relative;
+    transition: 0.2s;
+
+    &:hover {
+      transition: 0.2s;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    }
 
     @include media-size(880px) {
       width: 30rem;

@@ -61,6 +61,10 @@ p, ul, li {
   color: #335576;
   text-decoration: none;
 }
+.nav__main a:hover {
+  text-shadow: 0 5px 1rem rgba(123, 123, 123, 0.308);
+  transition: 0.1s;
+}
 .nav--travel-site {
   color: #335576;
   font-weight: 800;
@@ -241,7 +245,6 @@ p, ul, li {
   color: #335576;
   position: relative;
   gap: 3rem;
-  z-index: -1;
 }
 @media only screen and (max-width: 880px) {
   .itinerary-section {
@@ -288,6 +291,11 @@ p, ul, li {
   height: 22rem;
   background-color: #ffffff;
   position: relative;
+  transition: 0.2s;
+}
+.itinerary-section__card:hover {
+  transition: 0.2s;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 @media only screen and (max-width: 880px) {
   .itinerary-section__card {
