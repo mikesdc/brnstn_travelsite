@@ -86,8 +86,14 @@
     @include tablet {
       @include backgroundImg("../Images/hero.png", contain, 18rem, 20rem);
     }
+
+    @include media-size(400px) {
+      @include backgroundImg("../Images/hero.png", contain, 80vw, 20rem);
+       
+      }
+    }
   }
-}
+
 
 .recommendations-section {
   @include flexCenter;
@@ -123,6 +129,12 @@
     font-size: 1.4rem;
     font-weight: 800;
     color: $slate;
+
+    @include media-size(710px) {
+      position: relative;
+      top: -3rem;
+      left: initial;
+    }
   }
 
   &__card {
@@ -143,6 +155,10 @@
   @include media-size(800px) {
     @include backgroundImg("../Images/hawaii.jpg", cover, 21rem, 12rem);
   }
+
+  @include media-size(400px) {
+    @include backgroundImg("../Images/hawaii.jpg", cover, 80vw, 12rem);
+  }
 }
 
 .card--iceland {
@@ -151,6 +167,10 @@
   @include media-size(800px) {
     @include backgroundImg("../Images/iceland.jpg", cover, 21rem, 12rem);
   }
+
+  @include media-size(400px) {
+    @include backgroundImg("../Images/iceland.jpg", cover, 80vw, 12rem);
+  }
 }
 
 .card--greece {
@@ -158,5 +178,9 @@
 
   @include media-size(800px) {
     @include backgroundImg("../Images/greece.jpg", cover, 21rem, 12rem);
+  }
+
+  @include media-size(400px) {
+    @include backgroundImg("../Images/greece.jpg", cover, 80vw, 12rem);
   }
 }

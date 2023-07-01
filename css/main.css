@@ -124,9 +124,11 @@ p, ul, li {
 }
 @media only screen and (max-width: 710px) {
   .footer {
+    display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
-    height: 40rem;
+    height: 35rem;
   }
 }
 .footer a {
@@ -139,6 +141,7 @@ p, ul, li {
   flex-direction: column;
   justify-content: space-between;
   padding-top: 3rem;
+  margin: 0 1rem;
 }
 .footer--header {
   font-size: 1.3rem;
@@ -301,6 +304,16 @@ p, ul, li {
     height: 20rem;
   }
 }
+@media only screen and (max-width: 400px) {
+  .hero--img {
+    background-image: url("../Images/hero.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 80vw;
+    height: 20rem;
+  }
+}
 
 .recommendations-section {
   display: flex;
@@ -342,6 +355,13 @@ p, ul, li {
   font-weight: 800;
   color: #335576;
 }
+@media only screen and (max-width: 710px) {
+  .recommendations-section--recommendations {
+    position: relative;
+    top: -3rem;
+    left: initial;
+  }
+}
 .recommendations-section__card {
   display: flex;
   flex-direction: row;
@@ -371,6 +391,16 @@ p, ul, li {
     height: 12rem;
   }
 }
+@media only screen and (max-width: 400px) {
+  .card--hawaii {
+    background-image: url("../Images/hawaii.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 80vw;
+    height: 12rem;
+  }
+}
 
 .card--iceland {
   background-image: url("../Images/iceland.jpg");
@@ -390,6 +420,16 @@ p, ul, li {
     height: 12rem;
   }
 }
+@media only screen and (max-width: 400px) {
+  .card--iceland {
+    background-image: url("../Images/iceland.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 80vw;
+    height: 12rem;
+  }
+}
 
 .card--greece {
   background-image: url("../Images/greece.jpg");
@@ -406,6 +446,16 @@ p, ul, li {
     background-size: cover;
     background-repeat: no-repeat;
     width: 21rem;
+    height: 12rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .card--greece {
+    background-image: url("../Images/greece.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 80vw;
     height: 12rem;
   }
 }/*# sourceMappingURL=main.css.map */

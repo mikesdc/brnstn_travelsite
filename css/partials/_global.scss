@@ -125,15 +125,17 @@ p, ul, li {
   justify-content: center;
   align-items: flex-start;
   gap: 7rem;
-
+  
   @include tablet {
    gap: 2rem;
   }
 
   @include media-size(710px) {
-  flex-direction: column;  
+  display: flex;
+    flex-direction: column;  
+    justify-content: flex-start;
   align-items: center;
-  height: 40rem;
+  height: 35rem;
   }
 
   a {
@@ -147,12 +149,14 @@ p, ul, li {
     flex-direction: column;
     justify-content: space-between;
     padding-top: 3rem;
+    margin: 0 1rem;
   }
 
   &--header {
     font-size: 1.3rem;
     font-weight: 800;
     color: $slate;
+    
   }
 
   &--sub {
