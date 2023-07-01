@@ -54,7 +54,6 @@ p, ul, li {
 @media only screen and (max-width: 582px) {
   .nav__main {
     display: none;
-    flex-basis: 0;
   }
 }
 .nav__main a,
@@ -86,6 +85,11 @@ p, ul, li {
   align-items: center;
   gap: 1rem;
   margin: 0 4rem;
+}
+@media only screen and (max-width: 582px) {
+  .nav__page-links {
+    margin: 0.4rem;
+  }
 }
 .nav__page-links a {
   font-size: 0.9rem;
@@ -326,11 +330,6 @@ p, ul, li {
   position: relative;
   gap: 3rem;
 }
-@media only screen and (max-width: 800px) {
-  .recommendations-section {
-    height: 55rem;
-  }
-}
 @media only screen and (max-width: 1000px) {
   .recommendations-section {
     gap: 1.5rem;
@@ -339,6 +338,7 @@ p, ul, li {
 @media only screen and (max-width: 800px) {
   .recommendations-section {
     flex-direction: column;
+    height: 55rem;
   }
 }
 .recommendations-section a {

@@ -103,16 +103,14 @@
   position: relative;
   gap: 3rem;
 
-  @include media-size(800px) {
-    height: 55rem;
-  }
-
+  
   @include tablet {
     gap: 1.5rem;
   }
 
   @include media-size(800px) {
     flex-direction: column;
+    height: 55rem;
   }
 
   a {
