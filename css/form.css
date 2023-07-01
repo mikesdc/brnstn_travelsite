@@ -208,34 +208,7 @@ p, ul, li {
   height: 1.7rem;
 }
 
-.hawaii-background {
-  background-image: url("../Images/hawaii.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-}
-
-.greece-background {
-  background-image: url("../Images/greece.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 40rem;
-}
-
-.iceland-background {
-  background-image: url("../Images/iceland.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 40rem;
-}
-
-.itinerary-section {
+.form-section {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -245,9 +218,12 @@ p, ul, li {
   color: #335576;
   position: relative;
   gap: 3rem;
+  background-color: #335576;
+  height: 40rem;
+  width: 100vw;
 }
 @media only screen and (max-width: 880px) {
-  .itinerary-section {
+  .form-section {
     flex-direction: column;
     gap: 3rem;
     z-index: -1;
@@ -255,13 +231,16 @@ p, ul, li {
     justify-content: center;
   }
 }
-.itinerary-section a {
+.form-section a {
   font-size: 1.5rem;
   font-weight: 800;
   color: #ffffff;
   text-decoration: none;
 }
-.itinerary-section--destination {
+.form-section--paragraph {
+  color: black;
+}
+.form-section--destination {
   position: absolute;
   top: 7rem;
   left: 7rem;
@@ -270,7 +249,7 @@ p, ul, li {
   color: #ffffff;
 }
 @media only screen and (max-width: 880px) {
-  .itinerary-section--destination {
+  .form-section--destination {
     position: relative;
     top: initial;
     left: initial;
@@ -279,7 +258,7 @@ p, ul, li {
     text-shadow: 0 0 3rem rgba(45, 37, 23, 0.358);
   }
 }
-.itinerary-section__card {
+.form-section__card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -287,18 +266,18 @@ p, ul, li {
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   margin-top: 5rem;
-  width: 15.8rem;
-  height: 22rem;
+  width: 80vw;
+  height: 25rem;
   background-color: #ffffff;
   position: relative;
   transition: 0.2s;
 }
-.itinerary-section__card:hover {
+.form-section__card:hover {
   transition: 0.2s;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 @media only screen and (max-width: 880px) {
-  .itinerary-section__card {
+  .form-section__card {
     width: 30rem;
     height: 25rem;
     margin-top: 0;
@@ -306,20 +285,20 @@ p, ul, li {
   }
 }
 @media only screen and (max-width: 500px) {
-  .itinerary-section__card {
+  .form-section__card {
     width: 90vw;
     height: 25rem;
     margin-top: 0;
     flex-direction: column;
   }
 }
-.itinerary-section__card ul {
+.form-section__card ul {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 1rem;
 }
-.itinerary-section__card ul li {
+.form-section__card ul li {
   color: black;
   width: 13.5rem;
   height: 3rem;
@@ -331,10 +310,10 @@ p, ul, li {
   text-align: center;
 }
 
-.itinerary--item {
+.form--item {
   list-style-type: none;
 }
-.itinerary--header {
+.form--header {
   width: 87%;
   font-size: 1.15rem;
   font-weight: bold;
@@ -344,4 +323,4 @@ p, ul, li {
   text-align: center;
   position: absolute;
   top: 0rem;
-}/*# sourceMappingURL=destinations.css.map */
+}/*# sourceMappingURL=form.css.map */

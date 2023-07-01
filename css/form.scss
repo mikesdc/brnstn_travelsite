@@ -1,0 +1,121 @@
+@use "./partials/variables" as *;
+@use "./partials/global" as *;
+@use "./partials/mixin" as *;
+
+
+.form-section {
+  @include flexCenter;
+  height: 40rem;
+  padding-top: 3.9rem;
+  color: $slate;
+  position: relative;
+  gap: 3rem;
+  background-color: $slate;
+  height: 40rem;
+  width: 100vw;
+
+  @include media-size(880px) {
+    flex-direction: column;
+    gap: 3rem;
+    z-index: -1;
+    height: 95rem;
+    justify-content: center;
+  }
+
+  a {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: $white;
+    text-decoration: none;
+  }
+
+  &--paragraph {
+    color: black;
+  }
+
+  &--destination {
+    position: absolute;
+    top: 7rem;
+    left: 7rem;
+    font-size: 4.2rem;
+    font-weight: 800;
+    color: $white;
+
+    @include media-size(880px) {
+      position: relative;
+      top: initial;
+      left: initial;
+      display: block;
+      text-align: center;
+      text-shadow: 0 0 3rem rgba(45, 37, 23, 0.358);
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin-top: 5rem;
+    width: 80vw;
+    height: 25rem;
+    background-color: $white;
+    position: relative;
+    transition: 0.2s;
+
+    &:hover {
+      transition: 0.2s;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    }
+
+    @include media-size(880px) {
+      width: 30rem;
+      height: 25rem;
+      margin-top: 0;
+      flex-direction: column;
+    }
+
+    @include media-size(500px) {
+      width: 90vw;
+      height: 25rem;
+      margin-top: 0;
+      flex-direction: column;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 1rem;
+
+      li {
+        color: black;
+        width: 13.5rem;
+        height: 3rem;
+        @include flexCenter;
+        background-color: $off-white;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.form {
+  &--item {
+    list-style-type: none;
+  }
+
+  &--header {
+    width: 87%;
+    font-size: 1.15rem;
+    font-weight: bold;
+    color: black;
+    padding-top: 0.9rem;
+    border-bottom: 3px solid black;
+    text-align: center;
+    position: absolute;
+    top: 0rem;
+  }
+}

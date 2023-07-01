@@ -14,7 +14,7 @@ p, ul, li {
 }
 
 .nav {
-  width: 100%;
+  width: 100vw;
   height: 3.9rem;
   background: $white;
   display: flex;
@@ -104,6 +104,7 @@ p, ul, li {
       color: black;
     }
   }
+
   &-link--box {
     padding: 1rem 0 0.6rem;
     border-bottom: 0.2rem solid transparent;
