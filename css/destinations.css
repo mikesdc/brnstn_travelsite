@@ -1,7 +1,7 @@
 html,
 body,
 h2,
-p, ul, li {
+p, ul, li, form {
   margin: 0;
   padding: 0;
 }

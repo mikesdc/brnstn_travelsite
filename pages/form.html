@@ -52,32 +52,144 @@
 
     <main>
       <section class="form-section">
-        <h2 class="form-section--destination">Let's go!</h2>
-<p class="form-section--paragraph">Complete this form and we will get back to you with more information.</p>
+        <h2 class="form-section--statement">Let's go!</h2>
+        <p class="form-section--paragraph">
+          Complete this form and we will get back to you with more information.
+        </p>
 
         <div class="form-section__card">
-          <div class="form--header">Enter your information here, and we will get back to you as soon as possible</div>
+          <div class="form--header">Registration</div>
 
-          <form action="">
-            
-            FirstName
-            LastName
-            Email Address
-            airport of origin
-            destination
-            departure date
-            arrival date
-          </form>
+          <div class="form-section__form">
+            <form action="../index.html">
+              <div class="form__section">
+                <div class="form__section--inst">
+                  <label for="form--first-name">Enter your first name:</label>
+                </div>
+                <div class="form__section--input">
+                  <input
+                    type="text"
+                    placeholder="First Name"
+                    id="form--first-name"
+                    name="fname"
+                  />
+                </div>
+              </div>
 
-          <ul>
-            <div><li class="form--item">Breakfast</li></div>
-            <div><li class="form--item">Lunch</li></div>
-            <div><li class="form--item">Dinner</li></div>
-            <div><li class="form--item">Hiking</li></div>
-          </ul>
+              <div class="form__section">
+                <div class="form__section--inst">
+                  <label for="form--last-name">Enter your last name:</label>
+                </div>
+                <div class="form__section--input">
+                  <input
+                    type="text"
+                    placeholder="Last Name"
+                    id="form--last-name"
+                    name="lname"
+                  />
+                </div>
+              </div>
+
+              <div class="form__section">
+                <div class="form__section--inst">
+                  <label for="form--email">Enter your email address:</label>
+                </div>
+                <div class="form__section--input">
+                  <input
+                    type="email"
+                    placeholder="Email Address"
+                    id="form--email"
+                    name="email"
+                  />
+                </div>
+              </div>
+
+              <div class="form__section">
+                <div class="form__section--inst">
+                  <label for="form--departure-airport"
+                    >Departing from?</label
+                  >
+                </div>
+
+                <div class="form__section--input">
+                  <select
+                    name="arprt"
+                    placeholder="Departure Airport"
+                    id="form--departure-airport"
+                  >
+                    <option value=""></option>
+                    <option value="atl">Atlanta - ATL</option>
+                    <option value="lax">Los Angeles - LAX</option>
+                    <option value="ord">Chicago - ORD</option>
+                    <option value="dfw">Dallas - DFW</option>
+                    <option value="den">Denver - DEN</option>
+                    <option value="jfk">New York - JFK</option>
+                    <option value="sfo">San Francisco - SFO</option>
+                    <option value="las">Las Vegas - LAS</option>
+                    <option value="yyz">Toronto - YYZ</option>
+                    <option value="sea">Seattle - SEA</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form__section--dest">
+                <div class="form__section--destinst">
+                  <span class="form--destination"
+                    >Which destination(s) are you interested in?</span
+                  >
+                </div>
+                <div class="form__section--destinput">
+                  <label for="ck-hawaii">Hawaii</label>
+                  <input
+                    type="checkbox"
+                    id="ck-hawaii"
+                    name="dest"
+                    value="hw"
+                  />
+
+                  <label for="ck-iceland">Iceland</label>
+                  <input
+                    type="checkbox"
+                    id="ck-iceland"
+                    name="dest"
+                    value="il"
+                  />
+
+                  <label for="ck-greece">Greece</label>
+                  <input
+                    type="checkbox"
+                    id="ck-greece"
+                    name="dest"
+                    value="gc"
+                  />
+                </div>
+              </div>
+
+              <div class="form__section">
+                <div class="form__section--inst">
+                  <label for="form--departure-date">Departure Date</label>
+                </div>
+                <div class="form__section--input">
+                  <input type="date" id="form--departure-date" name="ddate" />
+                </div>
+              </div>
+
+              <div class="form__section">
+                <div class="form__section--inst">
+                  <label for="form--arrival-date">Arrival Date</label>
+                </div>
+                <div class="form__section--input">
+                  <input type="date" id="form--arrival-date" name="adate" />
+                </div>
+              </div>
+
+              <div class="form--divbutton">
+              <!-- <button>Submit</button> -->
+              <input type="submit" value="Submit" class="form--button"/>
+              </div>
+            </form>
+          </div>
         </div>
-
-
       </section>
     </main>
     <footer class="footer">

@@ -33,3 +33,7 @@
     @content;
   }
 }
+
+@mixin orange-gradient {
+  background-image: linear-gradient(to right top, #db7a4e, #f49395, #f5b7cf, #f2ddf2, #ffffff);
+}
